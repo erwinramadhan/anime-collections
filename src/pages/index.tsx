@@ -55,7 +55,7 @@ export default function Home() {
 
   const onClickCard = useCallback((id: number) => {
     router.push(`/anime/${id}`)
-  }, [])
+  }, [router])
 
   const onPageChange = useCallback((event: { selected: number }) => {
     setSelectedPage(event.selected + 1)
