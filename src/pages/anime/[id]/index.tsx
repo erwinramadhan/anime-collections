@@ -139,7 +139,7 @@ const DetailAnime = () => {
         <p dangerouslySetInnerHTML={{ __html: detailAnime?.description ?? '' }} />
       </div>
       <button css={button} onClick={onAddAnimeToCollection}>
-        Add Anime: '{detailAnime?.title?.english ?? ''}' into my collection
+        Add Anime: &apos;{detailAnime?.title?.english ?? ''}&apos; into my collection
       </button>
       <AddToCollectionModal
         isOpen={modalState.isAddToCollectionOpen}
