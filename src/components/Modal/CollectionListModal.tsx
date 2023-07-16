@@ -50,7 +50,7 @@ const CollectionListModal: FC<CollectionListModalProps> = ({ onClose, onPressIte
          </div>
          <div css={collectionListBodyWrapper}>
            {collections.map(el => (
-             <div css={list} onClick={onPressItem}>
+             <div key={el} css={list} onClick={onPressItem}>
               <p>{el}</p>
             </div>))
           }
