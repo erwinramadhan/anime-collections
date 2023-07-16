@@ -1,0 +1,20 @@
+query GetDetailAnime($id: Int!) {
+  Media(id: $id) {
+    id
+    title {
+      english
+    }
+    coverImage {
+      extraLarge
+      large
+      medium
+      color
+    }
+    bannerImage
+    description
+    episodes
+    genres
+    duration
+    averageScore
+  }
+}
